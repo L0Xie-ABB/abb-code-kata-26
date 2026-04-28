@@ -21,4 +21,7 @@ public:
     GildedRose(std::vector<Item> &items);
 
     void updateQuality();
+
+private:
+    void updateItem(Item &item);
 };
