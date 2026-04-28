@@ -51,6 +51,10 @@ void GildedRose::updateItem(Item &item)
 
         return;
     }
+    else if (item.name == "Sulfuras, Hand of Ragnaros")
+    {
+        return;
+    }
     else
     {
         if (item.quality < 50)
