@@ -82,10 +82,6 @@ void GildedRose::updateItem(Item &item)
                     }
                 }
             }
-            else
-            {
-                item.quality = item.quality - item.quality;
-            }
         }
         else
         {
