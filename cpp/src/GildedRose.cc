@@ -22,6 +22,13 @@ void GildedRose::updateItem(Item &item)
         {
             item.quality = item.quality - 1;
         }
+
+        item.sellIn--;
+        if (item.sellIn < 0 && item.quality > 0)
+        {
+            item.quality = item.quality - 1;
+        }
+        return;
     }
     else if (item.name == "Backstage passes to a TAFKAL80ETC concert")
     {
